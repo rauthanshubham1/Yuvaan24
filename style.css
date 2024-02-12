@@ -1,6 +1,6 @@
 body {
   background-color: #111111;
-  display: block;
+  display:block;
 }
 
 nav {
@@ -35,7 +35,7 @@ h1 {
   padding: 0;
 }
 
-#quote {
+#quote{
   font-family: 'Aladin', system-ui;
   font-size: 40px;
   text-shadow: 3px 3px 0px #D518E6;
@@ -45,7 +45,7 @@ h1 {
   padding: 0;
 }
 
-nav>img {
+nav > img {
   height: 20px;
   align-self: center;
   padding-left: 10px;
@@ -70,7 +70,7 @@ button {
 }
 
 #theme {
-  background-image: url('/assets/BG1.png');
+  background-image: url('https://raw.githubusercontent.com/nikhileshjain/yuvaan-images/main/assets/BG.png');
   height: 570px;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ span {
   font-size: 40px;
 }
 
-#theme>gabbar {
+#theme > gabbar {
   z-index: 100;
 }
 
@@ -121,20 +121,21 @@ span {
 
 
 #About {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: fit-content;
   text-align: center;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .abt {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway',sans-serif;
   color: #FFF;
   font-size: 20px;
   width: 900px;
+  margin-left: 170px;
 }
+
+
 
 
 #Glimpses {
@@ -147,7 +148,7 @@ span {
 }
 
 .subhead {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway',sans-serif;
   font-size: 46px;
   color: #FFF;
   padding: 0;
@@ -176,9 +177,10 @@ iframe {
   height: 65vh;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
-#Events>h1 {
+#Events > h1 {
   margin-bottom: 40px;
 }
 
@@ -226,7 +228,7 @@ iframe {
   line-height: 50px;
   background: #fff;
   border-radius: 50%;
-  /* margin-right: 38px; */
+  margin-right: 38px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
@@ -250,7 +252,7 @@ iframe {
   grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 51px;
+  gap: 16px;
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -319,13 +321,13 @@ iframe {
 
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
+      grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
-    grid-auto-columns: 100%;
+      grid-auto-columns: 100%;
   }
 }
 
@@ -402,9 +404,8 @@ iframe {
   filter: drop-shadow(5px 5px 0px #D518E6);
 }
 
-h4,
-h6 {
-  font-family: 'Raleway', sans-serif;
+h4, h6 {
+  font-family: 'Raleway',sans-serif;
   font-size: 30px;
   margin: 0;
   padding: 0;
@@ -418,24 +419,24 @@ h6 {
 
 
 
-#Contact {
+#Contact{
   background-color: #111;
   width: 100%;
   text-align: center;
   padding: 70px 30px 20px 0px;
 }
 
-#Yuvaan_icon {
+#Yuvaan_icon{
   width: 120px;
 }
 
-.social_icons {
+.social_icons{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.social_icons a {
+.social_icons a{
   text-decoration: none;
   padding: 10px;
   background-color: transparent;
@@ -443,92 +444,28 @@ h6 {
   border-radius: 50%;
 }
 
-.social_icons a i {
+.social_icons a i{
   font-size: 2em;
   color: #E5C417;
 }
 
-.social_icons a:hover {
+.social_icons a:hover{
   background-color: #E5C417;
   transition: 0.5s;
 }
 
-.social_icons a:hover i {
+.social_icons a:hover i{
   color: #111;
   transition: 0.5s;
 }
 
-.footer_bottom {
+.footer_bottom{
   background-color: #000;
   text-align: center;
   padding: 20px;
 }
 
-.footer_bottom p {
+.footer_bottom p{
   color: #FFF;
   font-size: 20px;
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
-  /* Adjust styles for smaller screens */
-
-  nav {
-    width: 100%;
-    padding: 10px;
-  }
-
-  ul {
-    gap: 10px;
-  }
-
-  #main {
-    margin-top: 50px;
-  }
-
-  #About .abt {
-    margin-left: 10px;
-    width: 100%;
-  }
-
-  .wrapper i {
-    margin-right: 10px;
-  }
-
-  .carousel .card {
-    width: 100%;
-  }
-
-  .footer_bottom p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  /* Adjust styles for even smaller screens */
-
-  #theme {
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 150px;
-  }
-
-  #quote {
-    /* Example: Adjusting font size and line height for smaller screens */
-    font-size: 50px;
-    line-height: 1.5;
-  }
-
-  #theme img {
-    max-width: 100%;
-  }
-
-  #Glimpses,
-  #Events,
-  #Council,
-  #Contact {
-    margin-top: 30px;
-  }
 }
